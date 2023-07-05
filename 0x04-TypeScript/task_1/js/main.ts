@@ -1,29 +1,28 @@
-// Define the Teacher interface
-interface Teacher {
+// Define the StudentInterface interface
+interface StudentInterface {
   firstName: string;
   lastName: string;
-  readonly fullTimeEmployee: boolean;
-  yearsOfExperience?: number;
-  readonly location: string;
-  [key: string]: any;
 }
 
-// Define the Directors interface extending Teacher
-interface Directors extends Teacher {
-  numberOfReports: number;
+// Define the ClassInterface interface
+interface ClassInterface {
+  workOnHomework: () => string;
+  displayName: () => string;
 }
 
-// Define the printTeacherFunction interface
-interface printTeacherFunction {
-  (firstName: string, lastName: string): string;
-}
-
-// Implement the printTeacher function
-const printTeacher: printTeacherFunction = (firstName, lastName) => {
-  const initials = `${firstName.charAt(0)}.`;
-  return `${initials} ${lastName}`;
+// Create a student object using object literal notation
+const student1: StudentInterface = {
+  firstName: 'John',
+  lastName: 'Doe',
 };
 
-// Test the printTeacher function
-console.log(printTeacher("John", "Doe")); // J. Doe
+// Implement the StudentClass class using arrow function syntax
+const StudentClass: ClassInterface = {
+  workOnHomework: () => 'Currently working',
+  displayName: () => student1.firstName,
+};
+
+// Test the methods of the StudentClass
+console.log(StudentClass.workOnHomework()); // Currently working
+console.log(StudentClass.displayName()); // John
 
