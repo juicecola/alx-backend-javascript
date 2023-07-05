@@ -8,22 +8,27 @@ interface Teacher {
   [key: string]: any;
 }
 
-// Create a teacher object
-const teacher3: Teacher = {
+// Define the Directors interface extending Teacher
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
+
+// Create a director object
+const director1: Directors = {
   firstName: 'John',
   lastName: 'Doe',
-  fullTimeEmployee: false,
   location: 'London',
-  contract: false,
+  fullTimeEmployee: true,
+  numberOfReports: 17,
 };
 
-console.log(teacher3);
+console.log(director1);
 
 // should print
 // Object
-// contract: false
 // firstName: "John"
-// fullTimeEmployee: false
+// fullTimeEmployee: true
 // lastName: "Doe"
 // location: "London"
+// numberOfReports: 17
 
