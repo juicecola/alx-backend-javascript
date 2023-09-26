@@ -1,28 +1,47 @@
-// Define the StudentInterface interface
-interface StudentInterface {
-  firstName: string;
-  lastName: string;
+export interface Teacher {
+  readonly firstName: string,
+  readonly lastName: string,
+  fullTimeEmployee: boolean,
+  yearsOfExperience?: number,
+  location: string,
+  [index:string]: any,
 }
 
-// Define the ClassInterface interface
-interface ClassInterface {
-  workOnHomework: () => string;
-  displayName: () => string;
+export interface Director extends Teacher {
+  numberOfReport: number,
 }
 
-// Create a student object using object literal notation
-const student1: StudentInterface = {
-  firstName: 'John',
-  lastName: 'Doe',
-};
+export interface printTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
 
-// Implement the StudentClass class using arrow function syntax
-const StudentClass: ClassInterface = {
-  workOnHomework: () => 'Currently working',
-  displayName: () => student1.firstName,
-};
+export function printTeacher(firstName: string, lastName: string): string {
+  return `${firstName[0]}. ${lastName}`;
+}
 
-// Test the methods of the StudentClass
-console.log(StudentClass.workOnHomework()); // Currently working
-console.log(StudentClass.displayName()); // John
+export interface IStudentClassConstructor {
+  new (firstName: string, lastName: string): IStudentClass;
+}
 
+export interface IStudentClass {
+  workOnHomework(): string;
+  displayName(): string;
+}
+
+export class StudentClass implements IStudentClass {
+  private _firstName!: string;
+  private _lastName!: string;
+
+  constructor(firstName: string, lastName: string) {
+    this._firstName = firstName;
+    this._lastName = lastName;
+  }
+
+  workOnHomework() {
+    return 'Currently working';
+  }
+
+  displayName() {
+    return this._firstName;
+    }
+}
