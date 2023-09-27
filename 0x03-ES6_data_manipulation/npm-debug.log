@@ -1,0 +1,341 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData @babel/node
+20 silly mapToRegistry name @babel/node
+21 silly mapToRegistry scope (from package name) @babel
+22 verbose mapToRegistry no registry URL found in name for scope @babel
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry uri https://registry.npmjs.org/@babel%2fnode
+26 silly fetchNamedPackageData eslint
+27 silly mapToRegistry name eslint
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry uri https://registry.npmjs.org/eslint
+31 silly fetchNamedPackageData eslint-config-airbnb-base
+32 silly mapToRegistry name eslint-config-airbnb-base
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry uri https://registry.npmjs.org/eslint-config-airbnb-base
+36 silly fetchNamedPackageData eslint-plugin-import
+37 silly mapToRegistry name eslint-plugin-import
+38 silly mapToRegistry using default registry
+39 silly mapToRegistry registry https://registry.npmjs.org/
+40 silly mapToRegistry uri https://registry.npmjs.org/eslint-plugin-import
+41 silly fetchNamedPackageData eslint-plugin-jest
+42 silly mapToRegistry name eslint-plugin-jest
+43 silly mapToRegistry using default registry
+44 silly mapToRegistry registry https://registry.npmjs.org/
+45 silly mapToRegistry uri https://registry.npmjs.org/eslint-plugin-jest
+46 silly fetchNamedPackageData jest
+47 silly mapToRegistry name jest
+48 silly mapToRegistry using default registry
+49 silly mapToRegistry registry https://registry.npmjs.org/
+50 silly mapToRegistry uri https://registry.npmjs.org/jest
+51 verbose request uri https://registry.npmjs.org/eslint-config-airbnb-base
+52 verbose request no auth needed
+53 info attempt registry request try #1 at 6:45:11 AM
+54 verbose request id 91a86faab7754074
+55 verbose etag W/"5288823565dc3078e3dc38e276a05b78"
+56 verbose lastModified Sun, 02 Apr 2023 01:44:28 GMT
+57 http request GET https://registry.npmjs.org/eslint-config-airbnb-base
+58 verbose request uri https://registry.npmjs.org/@babel%2fnode
+59 verbose request no auth needed
+60 info attempt registry request try #1 at 6:45:11 AM
+61 verbose etag W/"977eef25460873d8e137313acba9e1da"
+62 verbose lastModified Tue, 26 Sep 2023 14:56:34 GMT
+63 http request GET https://registry.npmjs.org/@babel%2fnode
+64 verbose request uri https://registry.npmjs.org/eslint-plugin-import
+65 verbose request no auth needed
+66 info attempt registry request try #1 at 6:45:12 AM
+67 verbose etag W/"a09f4ed1a66ed16c7db5d41e94333a15"
+68 verbose lastModified Fri, 18 Aug 2023 20:41:12 GMT
+69 http request GET https://registry.npmjs.org/eslint-plugin-import
+70 verbose request uri https://registry.npmjs.org/eslint
+71 verbose request no auth needed
+72 info attempt registry request try #1 at 6:45:12 AM
+73 verbose etag W/"b4b2328aed0b24a2e17bd5afddb1c5ad"
+74 verbose lastModified Fri, 22 Sep 2023 21:04:44 GMT
+75 http request GET https://registry.npmjs.org/eslint
+76 verbose request uri https://registry.npmjs.org/jest
+77 verbose request no auth needed
+78 info attempt registry request try #1 at 6:45:12 AM
+79 verbose etag W/"a9eebe6b3d49c037843cc96c07d4959e"
+80 verbose lastModified Tue, 12 Sep 2023 06:44:14 GMT
+81 http request GET https://registry.npmjs.org/jest
+82 verbose request uri https://registry.npmjs.org/eslint-plugin-jest
+83 verbose request no auth needed
+84 info attempt registry request try #1 at 6:45:13 AM
+85 verbose etag W/"b875118bf584084c7a93fafbe9145424"
+86 verbose lastModified Fri, 15 Sep 2023 22:51:28 GMT
+87 http request GET https://registry.npmjs.org/eslint-plugin-jest
+88 http 304 https://registry.npmjs.org/jest
+89 verbose headers { date: 'Wed, 27 Sep 2023 06:45:13 GMT',
+89 verbose headers   connection: 'keep-alive',
+89 verbose headers   'cf-ray': '80d1c85a3e7a2d17-IAD',
+89 verbose headers   'cf-cache-status': 'HIT',
+89 verbose headers   age: '247',
+89 verbose headers   'cache-control': 'public, max-age=300',
+89 verbose headers   etag: '"a9eebe6b3d49c037843cc96c07d4959e"',
+89 verbose headers   'last-modified': 'Tue, 12 Sep 2023 06:44:14 GMT',
+89 verbose headers   vary: 'Accept-Encoding',
+89 verbose headers   server: 'cloudflare' }
+90 silly get cb [ 304,
+90 silly get   { date: 'Wed, 27 Sep 2023 06:45:13 GMT',
+90 silly get     connection: 'keep-alive',
+90 silly get     'cf-ray': '80d1c85a3e7a2d17-IAD',
+90 silly get     'cf-cache-status': 'HIT',
+90 silly get     age: '247',
+90 silly get     'cache-control': 'public, max-age=300',
+90 silly get     etag: '"a9eebe6b3d49c037843cc96c07d4959e"',
+90 silly get     'last-modified': 'Tue, 12 Sep 2023 06:44:14 GMT',
+90 silly get     vary: 'Accept-Encoding',
+90 silly get     server: 'cloudflare' } ]
+91 verbose etag https://registry.npmjs.org/jest from cache
+92 verbose get saving jest to /root/.npm/registry.npmjs.org/jest/.cache.json
+93 http 304 https://registry.npmjs.org/eslint-config-airbnb-base
+94 verbose headers { date: 'Wed, 27 Sep 2023 06:45:13 GMT',
+94 verbose headers   connection: 'keep-alive',
+94 verbose headers   'cf-ray': '80d1c85a3c169c8e-IAD',
+94 verbose headers   'cf-cache-status': 'HIT',
+94 verbose headers   age: '51',
+94 verbose headers   'cache-control': 'public, max-age=300',
+94 verbose headers   etag: '"5288823565dc3078e3dc38e276a05b78"',
+94 verbose headers   'last-modified': 'Sun, 02 Apr 2023 01:44:28 GMT',
+94 verbose headers   vary: 'Accept-Encoding',
+94 verbose headers   server: 'cloudflare' }
+95 silly get cb [ 304,
+95 silly get   { date: 'Wed, 27 Sep 2023 06:45:13 GMT',
+95 silly get     connection: 'keep-alive',
+95 silly get     'cf-ray': '80d1c85a3c169c8e-IAD',
+95 silly get     'cf-cache-status': 'HIT',
+95 silly get     age: '51',
+95 silly get     'cache-control': 'public, max-age=300',
+95 silly get     etag: '"5288823565dc3078e3dc38e276a05b78"',
+95 silly get     'last-modified': 'Sun, 02 Apr 2023 01:44:28 GMT',
+95 silly get     vary: 'Accept-Encoding',
+95 silly get     server: 'cloudflare' } ]
+96 verbose etag https://registry.npmjs.org/eslint-config-airbnb-base from cache
+97 verbose get saving eslint-config-airbnb-base to /root/.npm/registry.npmjs.org/eslint-config-airbnb-base/.cache.json
+98 http 304 https://registry.npmjs.org/eslint-plugin-jest
+99 verbose headers { date: 'Wed, 27 Sep 2023 06:45:13 GMT',
+99 verbose headers   connection: 'keep-alive',
+99 verbose headers   'cf-ray': '80d1c85a3f6a0606-IAD',
+99 verbose headers   'cf-cache-status': 'HIT',
+99 verbose headers   age: '170',
+99 verbose headers   'cache-control': 'public, max-age=300',
+99 verbose headers   etag: '"b875118bf584084c7a93fafbe9145424"',
+99 verbose headers   'last-modified': 'Fri, 15 Sep 2023 22:51:28 GMT',
+99 verbose headers   vary: 'Accept-Encoding',
+99 verbose headers   server: 'cloudflare' }
+100 silly get cb [ 304,
+100 silly get   { date: 'Wed, 27 Sep 2023 06:45:13 GMT',
+100 silly get     connection: 'keep-alive',
+100 silly get     'cf-ray': '80d1c85a3f6a0606-IAD',
+100 silly get     'cf-cache-status': 'HIT',
+100 silly get     age: '170',
+100 silly get     'cache-control': 'public, max-age=300',
+100 silly get     etag: '"b875118bf584084c7a93fafbe9145424"',
+100 silly get     'last-modified': 'Fri, 15 Sep 2023 22:51:28 GMT',
+100 silly get     vary: 'Accept-Encoding',
+100 silly get     server: 'cloudflare' } ]
+101 verbose etag https://registry.npmjs.org/eslint-plugin-jest from cache
+102 verbose get saving eslint-plugin-jest to /root/.npm/registry.npmjs.org/eslint-plugin-jest/.cache.json
+103 http 304 https://registry.npmjs.org/eslint-plugin-import
+104 verbose headers { date: 'Wed, 27 Sep 2023 06:45:13 GMT',
+104 verbose headers   connection: 'keep-alive',
+104 verbose headers   'cf-ray': '80d1c85a39172d05-IAD',
+104 verbose headers   'cf-cache-status': 'HIT',
+104 verbose headers   age: '289',
+104 verbose headers   'cache-control': 'public, max-age=300',
+104 verbose headers   etag: '"a09f4ed1a66ed16c7db5d41e94333a15"',
+104 verbose headers   'last-modified': 'Fri, 18 Aug 2023 20:41:12 GMT',
+104 verbose headers   vary: 'Accept-Encoding',
+104 verbose headers   server: 'cloudflare' }
+105 silly get cb [ 304,
+105 silly get   { date: 'Wed, 27 Sep 2023 06:45:13 GMT',
+105 silly get     connection: 'keep-alive',
+105 silly get     'cf-ray': '80d1c85a39172d05-IAD',
+105 silly get     'cf-cache-status': 'HIT',
+105 silly get     age: '289',
+105 silly get     'cache-control': 'public, max-age=300',
+105 silly get     etag: '"a09f4ed1a66ed16c7db5d41e94333a15"',
+105 silly get     'last-modified': 'Fri, 18 Aug 2023 20:41:12 GMT',
+105 silly get     vary: 'Accept-Encoding',
+105 silly get     server: 'cloudflare' } ]
+106 verbose etag https://registry.npmjs.org/eslint-plugin-import from cache
+107 verbose get saving eslint-plugin-import to /root/.npm/registry.npmjs.org/eslint-plugin-import/.cache.json
+108 http 304 https://registry.npmjs.org/eslint
+109 verbose headers { date: 'Wed, 27 Sep 2023 06:45:13 GMT',
+109 verbose headers   connection: 'keep-alive',
+109 verbose headers   'cf-ray': '80d1c85a3e9a0a7f-IAD',
+109 verbose headers   'cf-cache-status': 'HIT',
+109 verbose headers   age: '20',
+109 verbose headers   'cache-control': 'public, max-age=300',
+109 verbose headers   etag: '"b4b2328aed0b24a2e17bd5afddb1c5ad"',
+109 verbose headers   'last-modified': 'Fri, 22 Sep 2023 21:04:44 GMT',
+109 verbose headers   vary: 'Accept-Encoding',
+109 verbose headers   server: 'cloudflare' }
+110 silly get cb [ 304,
+110 silly get   { date: 'Wed, 27 Sep 2023 06:45:13 GMT',
+110 silly get     connection: 'keep-alive',
+110 silly get     'cf-ray': '80d1c85a3e9a0a7f-IAD',
+110 silly get     'cf-cache-status': 'HIT',
+110 silly get     age: '20',
+110 silly get     'cache-control': 'public, max-age=300',
+110 silly get     etag: '"b4b2328aed0b24a2e17bd5afddb1c5ad"',
+110 silly get     'last-modified': 'Fri, 22 Sep 2023 21:04:44 GMT',
+110 silly get     vary: 'Accept-Encoding',
+110 silly get     server: 'cloudflare' } ]
+111 verbose etag https://registry.npmjs.org/eslint from cache
+112 verbose get saving eslint to /root/.npm/registry.npmjs.org/eslint/.cache.json
+113 http 304 https://registry.npmjs.org/@babel%2fnode
+114 verbose headers { date: 'Wed, 27 Sep 2023 06:45:13 GMT',
+114 verbose headers   connection: 'keep-alive',
+114 verbose headers   'cf-ray': '80d1c85a3d1e826f-IAD',
+114 verbose headers   'cf-cache-status': 'HIT',
+114 verbose headers   age: '225',
+114 verbose headers   'cache-control': 'public, max-age=300',
+114 verbose headers   etag: '"977eef25460873d8e137313acba9e1da"',
+114 verbose headers   'last-modified': 'Tue, 26 Sep 2023 14:56:34 GMT',
+114 verbose headers   vary: 'Accept-Encoding',
+114 verbose headers   server: 'cloudflare' }
+115 silly get cb [ 304,
+115 silly get   { date: 'Wed, 27 Sep 2023 06:45:13 GMT',
+115 silly get     connection: 'keep-alive',
+115 silly get     'cf-ray': '80d1c85a3d1e826f-IAD',
+115 silly get     'cf-cache-status': 'HIT',
+115 silly get     age: '225',
+115 silly get     'cache-control': 'public, max-age=300',
+115 silly get     etag: '"977eef25460873d8e137313acba9e1da"',
+115 silly get     'last-modified': 'Tue, 26 Sep 2023 14:56:34 GMT',
+115 silly get     vary: 'Accept-Encoding',
+115 silly get     server: 'cloudflare' } ]
+116 verbose etag https://registry.npmjs.org/@babel%2fnode from cache
+117 verbose get saving @babel/node to /root/.npm/registry.npmjs.org/_40babel_252fnode/.cache.json
+118 silly resolveWithNewModule jest@24.9.0 checking installable status
+119 silly cache add args [ 'jest@^24.9.0', null ]
+120 verbose cache add spec jest@^24.9.0
+121 silly cache add parsed spec Result {
+121 silly cache add   raw: 'jest@^24.9.0',
+121 silly cache add   scope: null,
+121 silly cache add   name: 'jest',
+121 silly cache add   rawSpec: '^24.9.0',
+121 silly cache add   spec: '>=24.9.0 <25.0.0',
+121 silly cache add   type: 'range' }
+122 silly addNamed jest@>=24.9.0 <25.0.0
+123 verbose addNamed ">=24.9.0 <25.0.0" is a valid semver range for jest
+124 silly addNameRange { name: 'jest', range: '>=24.9.0 <25.0.0', hasData: false }
+125 silly mapToRegistry name jest
+126 silly mapToRegistry using default registry
+127 silly mapToRegistry registry https://registry.npmjs.org/
+128 silly mapToRegistry uri https://registry.npmjs.org/jest
+129 verbose addNameRange registry:https://registry.npmjs.org/jest not in flight; fetching
+130 silly resolveWithNewModule eslint-config-airbnb-base@14.2.1 checking installable status
+131 silly cache add args [ 'eslint-config-airbnb-base@^14.0.0', null ]
+132 verbose cache add spec eslint-config-airbnb-base@^14.0.0
+133 silly cache add parsed spec Result {
+133 silly cache add   raw: 'eslint-config-airbnb-base@^14.0.0',
+133 silly cache add   scope: null,
+133 silly cache add   name: 'eslint-config-airbnb-base',
+133 silly cache add   rawSpec: '^14.0.0',
+133 silly cache add   spec: '>=14.0.0 <15.0.0',
+133 silly cache add   type: 'range' }
+134 silly addNamed eslint-config-airbnb-base@>=14.0.0 <15.0.0
+135 verbose addNamed ">=14.0.0 <15.0.0" is a valid semver range for eslint-config-airbnb-base
+136 silly addNameRange { name: 'eslint-config-airbnb-base',
+136 silly addNameRange   range: '>=14.0.0 <15.0.0',
+136 silly addNameRange   hasData: false }
+137 silly mapToRegistry name eslint-config-airbnb-base
+138 silly mapToRegistry using default registry
+139 silly mapToRegistry registry https://registry.npmjs.org/
+140 silly mapToRegistry uri https://registry.npmjs.org/eslint-config-airbnb-base
+141 verbose addNameRange registry:https://registry.npmjs.org/eslint-config-airbnb-base not in flight; fetching
+142 silly resolveWithNewModule eslint-plugin-jest@22.21.0 checking installable status
+143 silly cache add args [ 'eslint-plugin-jest@^22.17.0', null ]
+144 verbose cache add spec eslint-plugin-jest@^22.17.0
+145 silly cache add parsed spec Result {
+145 silly cache add   raw: 'eslint-plugin-jest@^22.17.0',
+145 silly cache add   scope: null,
+145 silly cache add   name: 'eslint-plugin-jest',
+145 silly cache add   rawSpec: '^22.17.0',
+145 silly cache add   spec: '>=22.17.0 <23.0.0',
+145 silly cache add   type: 'range' }
+146 silly addNamed eslint-plugin-jest@>=22.17.0 <23.0.0
+147 verbose addNamed ">=22.17.0 <23.0.0" is a valid semver range for eslint-plugin-jest
+148 silly addNameRange { name: 'eslint-plugin-jest',
+148 silly addNameRange   range: '>=22.17.0 <23.0.0',
+148 silly addNameRange   hasData: false }
+149 silly mapToRegistry name eslint-plugin-jest
+150 silly mapToRegistry using default registry
+151 silly mapToRegistry registry https://registry.npmjs.org/
+152 silly mapToRegistry uri https://registry.npmjs.org/eslint-plugin-jest
+153 verbose addNameRange registry:https://registry.npmjs.org/eslint-plugin-jest not in flight; fetching
+154 silly resolveWithNewModule eslint-plugin-import@2.28.1 checking installable status
+155 silly cache add args [ 'eslint-plugin-import@^2.18.2', null ]
+156 verbose cache add spec eslint-plugin-import@^2.18.2
+157 silly cache add parsed spec Result {
+157 silly cache add   raw: 'eslint-plugin-import@^2.18.2',
+157 silly cache add   scope: null,
+157 silly cache add   name: 'eslint-plugin-import',
+157 silly cache add   rawSpec: '^2.18.2',
+157 silly cache add   spec: '>=2.18.2 <3.0.0',
+157 silly cache add   type: 'range' }
+158 silly addNamed eslint-plugin-import@>=2.18.2 <3.0.0
+159 verbose addNamed ">=2.18.2 <3.0.0" is a valid semver range for eslint-plugin-import
+160 silly addNameRange { name: 'eslint-plugin-import',
+160 silly addNameRange   range: '>=2.18.2 <3.0.0',
+160 silly addNameRange   hasData: false }
+161 silly mapToRegistry name eslint-plugin-import
+162 silly mapToRegistry using default registry
+163 silly mapToRegistry registry https://registry.npmjs.org/
+164 silly mapToRegistry uri https://registry.npmjs.org/eslint-plugin-import
+165 verbose addNameRange registry:https://registry.npmjs.org/eslint-plugin-import not in flight; fetching
+166 verbose stack Error: Missing required argument #1
+166 verbose stack     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+166 verbose stack     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+166 verbose stack     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+166 verbose stack     at /usr/share/npm/lib/install/deps.js:457:7
+166 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+166 verbose stack     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+166 verbose stack     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+166 verbose stack     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+166 verbose stack     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+166 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+167 verbose cwd /root/alx-backend-javascript/0x03-ES6_data_manipulation
+168 error Linux 5.4.0-1088-aws
+169 error argv "/usr/bin/node" "/usr/bin/npm" "install"
+170 error node v8.10.0
+171 error npm  v3.5.2
+172 error code EMISSINGARG
+173 error typeerror Error: Missing required argument #1
+173 error typeerror     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+173 error typeerror     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+173 error typeerror     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+173 error typeerror     at /usr/share/npm/lib/install/deps.js:457:7
+173 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+173 error typeerror     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+173 error typeerror     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+173 error typeerror     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+173 error typeerror     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+173 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+174 error typeerror This is an error with npm itself. Please report this error at:
+174 error typeerror     <http://github.com/npm/npm/issues>
+175 verbose exit [ 1, true ]
