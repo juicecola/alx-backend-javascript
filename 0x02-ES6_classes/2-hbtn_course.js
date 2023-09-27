@@ -1,40 +1,43 @@
 export default class HolbertonCourse {
   constructor(name, length, students) {
-    this._validateAndSet('name', name, 'string');
-    this._validateAndSet('length', length, 'number');
-    this._validateAndSet('students', students, 'array');
-  }
-
-  _validateAndSet(property, value, type) {
-    if (typeof value === type) {
-      this[`_${property}`] = value;
-    } else {
-      throw new TypeError(`${property.charAt(0).toUpperCase() + property.slice(1)} must be a ${type}`);
-    }
+    this.name = name;
+    this.length = length;
+    this.students = students;
   }
 
   get name() {
     return this._name;
   }
 
+  set name(value) {
+    if (typeof value !== 'string') {
+      throw TypeError('name must be a String');
+    }
+    this._name = value;
+  }
+
   get length() {
     return this._length;
+  }
+
+  set length(value) {
+    if (typeof value !== 'number') {
+      throw TypeError('length must be a Number');
+    }
+    this._length = value;
   }
 
   get students() {
     return this._students;
   }
 
-  set name(name) {
-    this._validateAndSet('name', name, 'string');
-  }
-
-  set length(length) {
-    this._validateAndSet('length', length, 'number');
-  }
-
-  set students(students) {
-    this._validateAndSet('students', students, 'array');
+  set students(value) {
+    if (!Array.isArray(value)) {
+      throw TypeError('students must be an Array');
+    }
+    if (value.some((student) => typeof student !== 'string')) {
+      throw TypeError('students must be an Array of Strings');
+    }
+    this._students = value;
   }
 }
-
